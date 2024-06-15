@@ -53,7 +53,7 @@ header.design-one {
       color: black;
     }
   }
-  & > .block1 {
+  & > .block2 {
     display: flex;
     align-items: center;
     color: black;
@@ -61,7 +61,7 @@ header.design-one {
     font-weight: 600;
     font-size: 1.1rem;
   }
-  .block1 a {
+  .block2 a {
     border: 2px black solid;
     color: black;
     padding: 0.5rem 1rem;
@@ -77,7 +77,7 @@ header.design-one {
 
 
 /* Nested Specific Class */
-header.design2 {
+header.header2 {
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -101,20 +101,20 @@ header.design2 {
   width: 100px;
   height: 80px;
 }
-.Logo2{
+.Logo1{
 height: 50px;
 font-weight: 600;
 font-size: 1.2rem;
 }
 
-.bar{
+.bar1{
   height: 5px;
   width: 100%;
   background: black;
   border-radius: 10px;
 }
 
-.cog {
+.cog1 {
   font-size: 30px;
   margin-top: 15px;
   display: flex;
@@ -151,7 +151,7 @@ font-size: 1.2rem;
   align-items: center;
 }
 
-.design-three .navigation .nav-button {
+.design-three .navigation .navbutton {
   font-weight: 800;
   font-size: 20px;
   color: white;
@@ -188,7 +188,7 @@ font-size: 1.2rem;
   border: 3px rgb(234, 61, 22) solid;
   background-color: rgb(249, 175, 159);
 
- .company-logo {
+ .cat {
     height: 90px;
   }
 
@@ -302,7 +302,7 @@ header.animation-one {
     }
     }
   }
-  & > .block1 {
+  & > .block2 {
     display: flex;
     align-items: center;
     color: black;
@@ -310,7 +310,7 @@ header.animation-one {
     font-weight: 600;
     font-size: 1.1rem;
   }
-  .block1 a {
+  .block2 a {
     border: 2px black solid;
     color: black;
     padding: 0.5rem 1rem;
@@ -346,11 +346,11 @@ header.animation-one {
   nav a:hover::before {
     width: 100%;
   }
-  .block1:hover{
+  a.block1:hover{
     background-color: burlywood
   }
 
-  .block1:active {
+  a.block1:active {
   background-color: rgb(139, 115, 83);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -365,13 +365,18 @@ header.animation-one {
 header.animation {
   width: 100vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between;   
   flex-direction: row;
   padding: 2rem 10vw;
   border: 2px solid black;
   border-radius: 5px;
   background-color: orange;
+}
+
+header.animation p{
+font-weight: bold ;
+font-size: 20px;
+text-align: center;
 }
 
 .block1 {
@@ -412,7 +417,7 @@ header.animation {
   cursor: pointer;
 }
 
-.p{
+.company-logo{
 height: 50px;
 font-weight: 600;
 font-size: 1.2rem;
@@ -427,18 +432,20 @@ align-items: center;
 }
 
 .cog {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+ font-size: 30px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-/* Styling for the cog icon */
 .cog .fa-cog {
-  font-size: 24px;
+  font-size: 30px;
   transition: transform 0.5s ease;
 }
 
-/* Styling for the line */
 .line {
   width: 2px;
   height: 50px;
@@ -446,12 +453,10 @@ align-items: center;
   margin: 0 10px;
 }
 
-/* Styling for the shopping bag */
 .shop {
-  font-size: 20px;
+  font-size: 25px;
 }
 
-/* Hover effect to rotate only the cog icon */
 .cog:hover .fa-cog {
   transform: rotate(360deg);
 }
@@ -488,7 +493,7 @@ align-items: center;
 
 
 /* Non-Nested Non-Specific Class */
-.design-three {
+.animation-three {
   display: flex;
   align-self: flex-start;
   width: calc(100% - 1rem);
@@ -497,13 +502,13 @@ align-items: center;
   background-color: #389ebf;
 }
 
-.design-three .navigation {
+.animation-three .navigation1 {
   display: flex;
   gap: 3rem;
   align-items: center;
 }
 
-.design-three .navigation .nav-button {
+.animation-three .navigation1 .nav-button {
   font-weight: 800;
   font-size: 20px;
   color: white;
@@ -525,12 +530,22 @@ align-items: center;
   font-weight: 800;
 }
 
+.nav-button:hover{
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale (1.5);
+}
+
+
+
+
+
 
 
 
 
 /* Nested Non-Specific Class */
-.design-four {
+.animation-four {
   display: flex;
   align-items:center;
   justify-content: space-between;
@@ -540,7 +555,7 @@ align-items: center;
   border: 3px rgb(234, 61, 22) solid;
   background-color: rgb(249, 175, 159);
 
- .company-logo {
+ & .cat1 {
     height: 90px;
   }
 
@@ -555,6 +570,7 @@ align-items: center;
     font-size: 1.2rem;
     font-family:Arial, Helvetica, sans-serif;
   }
+
   .user{
     font-size: 30px;
   margin-top: 15px;
@@ -565,6 +581,15 @@ align-items: center;
   gap: 20px;
   }
 }
+
+.cat1:hover{
+  transform: translate(200px) rotate(360deg);
+  transition: 0.5s;
+}
+
+
+
+
 
 
 
@@ -582,7 +607,7 @@ align-items: center;
   border: 4px rgb(0, 0, 0) solid;
   background-color: rgb(255, 255, 255);
 
- .company-logo {
+ & .penguin{
     height: 90px;
   }
 
